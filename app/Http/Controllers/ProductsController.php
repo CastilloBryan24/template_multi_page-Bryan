@@ -18,7 +18,7 @@ class ProductsController extends Controller
             (object)["titre" => "From Around the World", "sousTitre" => "Bulk Speciality Blends", "para" => "Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details."]
         ];
 
-        return view("partials.products", compact("produit", "produit2", "produit3"));
+        return view("pages.products", compact("produit", "produit2", "produit3"));
     }
 }
 

@@ -38,18 +38,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="/">Home
+                    <li class="nav-item px-lg-4 {{(Route::getCurrentRoute()->uri()) === "/" ? 'active' : '' }} ">
+                    <a class="nav-link text-uppercase text-expanded" href="/">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item px-lg-4">
+                    <li class="nav-item px-lg-4 {{(Route::getCurrentRoute()->uri()) === "about" ? 'active' : '' }}">
                         <a class="nav-link text-uppercase text-expanded" href="/about">About</a>
                     </li>
-                    <li class="nav-item px-lg-4">
+                    <li class="nav-item px-lg-4 {{(Route::getCurrentRoute()->uri()) === "products" ? 'active' : '' }}">
                         <a class="nav-link text-uppercase text-expanded" href="/products">Products</a>
                     </li>
-                    <li class="nav-item px-lg-4">
+                    <li class="nav-item px-lg-4 {{(Route::getCurrentRoute()->uri()) === "store" ? 'active' : '' }}">
                         <a class="nav-link text-uppercase text-expanded" href="/store">Store</a>
                     </li>
                 </ul>

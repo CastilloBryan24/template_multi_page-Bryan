@@ -12,7 +12,7 @@ class ProfileController extends Controller
             moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time."]
         ];
 
-        return view("partials.about", compact("about"));
+        return view("pages.about", compact("about"));
     }
 }
 
