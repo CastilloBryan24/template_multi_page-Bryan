@@ -9,12 +9,12 @@
             <div class="row">
                 <div class="col-xl-9 col-lg-10 mx-auto">
                     <div class="bg-faded rounded p-5">
-                        @foreach($about as $element)
+                        @foreach($aboutData as $element)
                             <h2 class="section-heading mb-4">
                                 <span class="section-heading-upper">{{$element -> titre}}</span>
                                 <span class="section-heading-lower">{{$element -> sousTitre}}</span>
                             </h2>
-                            <p>{{$element -> para}}</p>
+                            <p>{{$element -> para1}}</p>
                             <p class="mb-0">{{$element -> para2}}</p>
                         @endforeach
                     </div>

@@ -1,5 +1,5 @@
 @extends('template.main')
 
 @section('content')
-    @include('partials.home')
+    {{-- @include('partials.home') --}}
 @endsection
